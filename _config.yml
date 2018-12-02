@@ -1,6 +1,41 @@
 # basic settings
-author: Zhaocheng Li ("Leo")
 url: https://zhaochengli.github.io
 theme: jekyll-theme-architect
 locale: "en-US"
 highlighter: "rouge"
+title: "Zhaocheng/Leo's Homepage"
+
+# site Author
+author:
+  name             : "Zhaocheng Li (Leo)"
+  avatar           : "profile.png"
+  bio              : "Your biography for the left-hand sidebar"
+  location         : "Victoria, BC, CANADA"
+  employer         : "University of Victoria"
+  #googlescholar    : "http://yourfullgooglescholarurl.com"
+  email            : "leolee0706@gmail.com"
+  url              : "https://zhaochengli.github.io"
+  #bitbucket        :
+  #codepen          :
+  #dribbble         :
+  #flickr           :
+  facebook         :
+  foursquare       :
+  github           : "academicpages"
+  google_plus      :
+  keybase          :
+  instagram        :
+  lastfm           :
+  linkedin         :
+  orcid            : "http://orcid.org/yourorcidurl"
+  pinterest        :
+  soundcloud       :
+  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  steam            :
+  tumblr           :
+  twitter          : "replacethistwitterhandle"
+  vine             :
+  weibo            :
+  xing             :
+  youtube          :
+  wikipedia        :

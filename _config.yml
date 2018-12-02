@@ -1,5 +1,3 @@
 author: Zhaocheng
 
-theme: jekyll-theme-cayman
-sharing:
-  provider: true
+theme: jekyll-theme-architect

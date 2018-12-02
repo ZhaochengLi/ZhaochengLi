@@ -1,10 +1,9 @@
 # site settings
-theme: jekyll-theme-architect
 locale                   : "en-US"
-title                    : "Zhaocheng / Leo's Homepage"
+title                    : "Leo's Homepage"
 title_separator          : "-"
 name                     : &name "Leo"
-description              : &description "personal description"
+description              : &description "Undergrad of UVic, BSc, Major Computer Science and Mathematics, Major Statistics"
 url                      : https://zhaochengli.github.io # the base hostname & protocol for your site
 repository               : "ZhaochengLi/ZhaochengLi.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"

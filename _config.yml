@@ -1,3 +1,6 @@
-author: Zhaocheng
-
+# basic settings
+author:Zhaocheng Li ("Leo")
+url:https://zhaochengli.github.com
 theme: jekyll-theme-architect
+locale: "en-US"
+highlighter: "rouge"

@@ -1,9 +1,23 @@
-# basic settings
-url: https://zhaochengli.github.io
+# site settings
 theme: jekyll-theme-architect
-locale: "en-US"
-highlighter: "rouge"
-title: "Zhaocheng/Leo's Homepage"
+locale                   : "en-US"
+title                    : "Zhaocheng / Leo's Homepage"
+title_separator          : "-"
+name                     : &name "Leo"
+description              : &description "personal description"
+url                      : https://zhaochengli.github.io # the base hostname & protocol for your site
+repository               : "ZhaochengLi/ZhaochengLi.github.io"
+teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+words_per_minute         : 160
+read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
+
+# Social Sharing
+# For specifying social profiles
+# - https://developers.google.com/structured-data/customize/social-profiles
+social:
+  type                   : linkedin
+  name                   : Zhaocheng Li
+  links                  : www.linkedin.com/in/zhaocheng-leo
 
 # site Author
 author:
@@ -12,30 +26,7 @@ author:
   bio              : "Your biography for the left-hand sidebar"
   location         : "Victoria, BC, CANADA"
   employer         : "University of Victoria"
-  #googlescholar    : "http://yourfullgooglescholarurl.com"
   email            : "leolee0706@gmail.com"
   url              : "https://zhaochengli.github.io"
-  #bitbucket        :
-  #codepen          :
-  #dribbble         :
-  #flickr           :
-  facebook         :
-  foursquare       :
-  github           : "academicpages"
-  google_plus      :
-  keybase          :
-  instagram        :
-  lastfm           :
-  linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
-  pinterest        :
-  soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
-  steam            :
-  tumblr           :
-  twitter          : "replacethistwitterhandle"
-  vine             :
-  weibo            :
-  xing             :
-  youtube          :
-  wikipedia        :
+  github           : "https://zhaochengli.github.io"
+  linkedin         : "https://www.linkedin.com/in/zhaocheng-leo"

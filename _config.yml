@@ -6,3 +6,4 @@ title                    : Leo's Homepage
 description              : "Zhaocheng Li, UVic, BSc, Major CS&Math, Major Stats"
 url                      : https://zhaochengli.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 repository               : "ZhaochengLi/ZhaochengLi.github.io"
+show_downloads           : true

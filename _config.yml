@@ -9,3 +9,5 @@ repository               : "ZhaochengLi/ZhaochengLi.github.io"
 
 # show_downloads           : true
 # this command provides the icons for viewers to download the web's package.
+
+theme: jekyll-theme-cayman

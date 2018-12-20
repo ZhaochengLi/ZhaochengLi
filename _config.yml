@@ -1,13 +1,2 @@
-# Site Settings
-theme                    : "jekyll-theme-cayman"
-locale                   : "en-US"
-highlighter              : "rouge"
-title                    : Leo's Homepage
-description              : "Zhaocheng Li, UVic, BSc, Major CS&Math, Major Stats"
-url                      : https://zhaochengli.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-repository               : "ZhaochengLi/ZhaochengLi.github.io"
-
-# show_downloads           : true
-# this command provides the icons for viewers to download the web's package.
 
 theme: jekyll-theme-cayman

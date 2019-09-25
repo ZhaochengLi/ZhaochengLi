@@ -1,144 +1,99 @@
 body{
-  background: url("./pic/building.jpg") no-repeat;
+  background-image: url("./pic/web-bgd01.jpg");
   background-size: cover;
-  margin: 0;
-  padding: 0;
+  background-attachment: fixed;
 }
 
-.header{
-  height: 100px;
-  background: #34495e;
-  padding: 0 20px;
-  color: #fff;
-}
-
-.logo{
-  height: 100px;
-  float: left;
-  text-transform: uppercase;
-}
-
-.menu{
-  float: right;
-  line-height: 100px;
-}
-
-.menu a{
-  color: #fff;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 0 10px;
-  transition: 0.4s;
-}
-
-.show-menu-btn, .hide-menu-btn{
-  transition: 0.4s;
-  font-size: 30px;
-  cursor: pointer;
-  display: none;
-}
-
-.show-menu-btn{
-  float: right;
-}
-
-.show-manu-btn i{
-  line-height: 100px;
-}
-
-.menu a:hover,
-.show-menu-btn:hover,
-.hide-menu-btn:hover{
-  color: #3498db;
-}
-
-#chk{
-  position: absolute;
-  visibility: hidden;
-  z-index: -1111;
-}
-
-@media screen and (max-width:800px) {
-  .show-menu-btn, .hide-menu-btn{
-    display: block;
-  }
-  .menu{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #333;
-    right: -100%;
-    top: 0;
-    text-align: center;
-    padding: 80px 0;
-    line-height: normal;
-    transition: 0.7s;
-  }
-  .menu a{
-    display: block;
-    padding: 20px;
-  }
-  .hide-menu-btn{
-    position: absolute;
-    top: 40px;
-    right: 40px;
-  }
-  #chk:checked ~ .menu{
-    right: 0;
-  }
-}
-
-.box{
-  width: 450px;
-  background: rgba(0,0,0,0.4)
-  padding: 40px;
-  margin: auto;
+#nav {
+  /*border-style: dashed;*/
+  border-color: #FCBA03;
+  height: 400px;
   text-align: center;
-  margin-top: 5%;
-  color: white;
-  font-family: "Century Gothic", sans-serif;
+  margin-top: 200px;
 }
 
-.box-img{
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
+#nav ul{
+  margin-top: 120px;
+  margin-bottom: 0px;
+  padding: 0px;
+  height: 280px;
+  /*border-style: dashed;*/
+  /*list-style: none;*/
+  text-align: center;
 }
 
-.box h1{
-  font-size: 40px;
-  letter-spacing: 3px;
-  font-weight: 100;
+#nav ul li {
+  display: inline-block; /*save the trouble to let "list-style: none;"*/
+  /*border-style: double;*/
+  margin-top: 10px;
+  margin-left: 5px;
+  padding: 80px;
 }
 
-.box h2{
+#nav ul li a {
+  padding: 80px;
+  /*border-style: dotted;*/
+  border-radius: 30%;
+  font-family: monospace,"Century Gothic", sans-serif;
   font-size: 20px;
-  letter-spacing: 3px;
-  font-weight: 100;
-}
-
-.box p{
-  text-align: justify;
-}
-
-ul{
-  margin: 0;
-  padding: 0;
-}
-
-.box li{
-  display: inline-block;
-  margin: 6px;
-  list-style: none;
-}
-
-.box li a{
-  color: white;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
   text-decoration: none;
-  font-size: 35px;
+  transition: 0.4s;
+  /*opacity: 0.8;*/
+}
+
+/*margin does not work here, default 0 always*/
+a#project{
+  background-image: url("./pic/colorful.jpg");
+  background-size: cover;
+}
+
+a#profile{
+  background-image: url("./pic/purplecube.jpg");
+  background-size: cover;
+}
+
+a#lifestyle{
+  background-image: url("./pic/pinkcube.jpg");
+  background-size: cover;
+}
+
+#project:hover, #profile:hover, #lifestyle:hover {
+  color: #E98074;
+  /*border-style: solid;*/
+  /*it makes the whole list element "shake"
+  if the border is invisible the first place*/
+}
+
+#media {
+  text-align: center;
+  margin: 0;
+  /*border-style: dashed;*/
+}
+
+#media ul{
+  text-align: left;
+}
+
+#media ul li{
+  /*border-style: double;*/
+  display: inline-block;
+  margin-left: 80px;
+}
+
+#media ul li#git {
+  margin-left: 480px;
+}
+
+#media ul li a{
+  font-size: 30px;
+  text-decoration: none;
+  color: #2E3B40;
   transition: all ease-in-out 250ms;
 }
 
-.box li a:hover{
+#media li a:hover{
   color: #b9b9b9;
 }

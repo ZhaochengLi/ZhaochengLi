@@ -1,99 +1,128 @@
 body{
-  background-image: url("./pic/web-bgd01.jpg");
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-image: url("./pic/black-die-wallpaper.jpg");
   background-size: cover;
-  background-attachment: fixed;
+}
+
+#quote {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 10px;
+}
+
+.word:first-letter {
+  font-size: 300%;
+  color: #e85541;
+}
+
+.word {
+  font-style: italic;
+  font-weight: 400;
+  font-family: monospace;
+  color: #faede8;
+  font-size: 20px;
 }
 
 #nav {
-  /*border-style: dashed;*/
-  border-color: #FCBA03;
-  height: 400px;
-  text-align: center;
-  margin-top: 200px;
-}
-
-#nav ul{
-  margin-top: 120px;
-  margin-bottom: 0px;
-  padding: 0px;
-  height: 280px;
-  /*border-style: dashed;*/
-  /*list-style: none;*/
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
   text-align: center;
 }
 
-#nav ul li {
-  display: inline-block; /*save the trouble to let "list-style: none;"*/
-  /*border-style: double;*/
-  margin-top: 10px;
-  margin-left: 5px;
-  padding: 80px;
-}
-
-#nav ul li a {
-  padding: 80px;
-  /*border-style: dotted;*/
+#nav a{
+  position: relative;
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  background: #e85541;
+  margin: 30px;
   border-radius: 30%;
-  font-family: monospace,"Century Gothic", sans-serif;
-  font-size: 20px;
-  font-weight: bold;
+  box-shadow: 0 5px 15px -5px #00000070;
   color: #000000;
-  text-transform: uppercase;
+  overflow: hidden;
   text-decoration: none;
-  transition: 0.4s;
-  /*opacity: 0.8;*/
 }
 
-/*margin does not work here, default 0 always*/
-a#project{
-  background-image: url("./pic/colorful.jpg");
-  background-size: cover;
-}
-
-a#profile{
-  background-image: url("./pic/purplecube.jpg");
-  background-size: cover;
-}
-
-a#lifestyle{
-  background-image: url("./pic/pinkcube.jpg");
-  background-size: cover;
+#nav a i {
+  font-family: monospace;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 120px;
+  font-size: 20px;
+  transition: 0.2s linear;
 }
 
 #project:hover, #profile:hover, #lifestyle:hover {
-  color: #E98074;
-  /*border-style: solid;*/
-  /*it makes the whole list element "shake"
-  if the border is invisible the first place*/
-}
-
-#media {
-  text-align: center;
-  margin: 0;
-  /*border-style: dashed;*/
-}
-
-#media ul{
-  text-align: left;
-}
-
-#media ul li{
-  /*border-style: double;*/
-  display: inline-block;
-  margin-left: 80px;
-}
-
-#media ul li#git {
-  margin-left: 480px;
-}
-
-#media ul li a{
-  font-size: 30px;
-  text-decoration: none;
-  color: #2E3B40;
+  color: #000000;
+  opacity: 0.8;
   transition: all ease-in-out 250ms;
 }
 
-#media li a:hover{
-  color: #b9b9b9;
+
+#media {
+  position: absolute;
+  top: 70%;
+  width: 100%;
+  text-align: center;
+}
+
+#media a{
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: #e85541;/*#c0edcc;*/
+  margin: 30px;
+  border-radius: 30%;
+  color: #000000;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+#media a i {
+  line-height: 50px;
+  font-size: 25px;
+  transition: 0.2s linear;
+}
+
+#media a:hover i{
+  transform: scale(1.2);
+  color: #e85541;
+}
+
+#media a::before {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: #000000;
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+
+#media a:hover:before {
+  animation: aaa 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+
+@keyframes aaa {
+  0%{
+    left: -110%;
+    top: 90%;
+  }
+  50%{
+    left: 10%;
+    top: -30%;
+  }
+  100%{
+    top: -10%;
+    left: -10%;
+  }
 }

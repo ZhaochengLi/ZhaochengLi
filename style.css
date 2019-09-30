@@ -3,8 +3,8 @@ body{
   padding: 0;
   width: 100%;
   /*background-image: url("./pic/black-die-wallpaper.jpg");*/
-  background-image: url("./pic/grids.jpg");
-  background-size: cover;
+  background-image: url("./pic/waves.gif");
+  background-size: auto;
 }
 
 #quote {
@@ -16,7 +16,7 @@ body{
 
 .word:first-letter {
   font-size: 300%;
-  color: #6bcbe8;
+  color: #eda580;/*#6bcbe8;*/
 }
 
 .word {
@@ -40,7 +40,7 @@ body{
   display: inline-block;
   width: 120px;
   height: 120px;
-  background: #6bcbe8;
+  background: #eda580;/*#6bcbe8;*/
   margin: 30px;
   border-radius: 30%;
   box-shadow: 0 5px 15px -5px #00000070;
@@ -59,7 +59,7 @@ body{
 }
 
 #project:hover, #profile:hover, #lifestyle:hover {
-  color: #caf584;
+  color: #d64747;
   opacity: 0.6;
 }
 
@@ -76,7 +76,7 @@ body{
   display: inline-block;
   width: 50px;
   height: 50px;
-  background: #6bcbe8;
+  background: #eda580;
   margin: 30px;
   border-radius: 30%;
   color: #000000;
@@ -92,7 +92,7 @@ body{
 
 #media a:hover i{
   transform: scale(1.2);
-  color: #6bcbe8;
+  color: #eda580;
 }
 
 #media a::before {
@@ -100,7 +100,7 @@ body{
   position: absolute;
   width: 120%;
   height: 120%;
-  background: #caf584;
+  background: #c9ccc0;
   transform: rotate(45deg);
   left: -110%;
   top: 90%;

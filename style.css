@@ -2,9 +2,8 @@ body{
   margin: 0;
   padding: 0;
   width: 100%;
-  /*background-image: url("./pic/black-die-wallpaper.jpg");*/
-  background-image: url("./pic/waves.gif");
-  background-size: auto;
+  background-image: url("./pic/bgd5.gif");
+  background-size: auto;/*!!!*/
 }
 
 #quote {

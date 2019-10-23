@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Design: Two Column, Fluid Layout</title>
+  </head>
+  <body>
+    <div id="header">This is HEADER</div>
+    <div id="main">This is MAIN</div>
+    <div id="extras">This is SIDEBAR</div>
+    <div id="footer">This is FOOTER</div>
+  </body>
+</html>
+
+
+<style>
+body {
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#header {
+  height: 30px;
+  margin: 0;
+  background-color: grey;
+}
+
+#main {
+  float: left;
+  width: 60%;
+  height: 400px;
+  margin: 0 5%;
+  background-color: pink;
+}
+
+#extras {
+  float: left;
+  width: 25%;
+  height: 400px;
+  margin: 0 5% 0 0;
+  background-color: lightblue;
+}
+
+#footer {
+  clear: left;
+  height: 30px;
+  margin: 0;
+  background-color: grey;
+}
+</style>

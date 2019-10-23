@@ -1,0 +1,85 @@
+* {
+  font-family: monospace;
+  background: #ecf0f1;
+}
+
+.wrap {
+  width: 960px;
+  margin: 0 auto;
+}
+
+#heading {
+  text-align: center;
+  border-bottom-style: groove;
+  border-bottom-color: grey;
+  margin: 0;
+  padding: 0;
+}
+
+#heading h1{
+  font-size: 3em;
+  margin: 0;
+  /*border-style: dashed;*/
+}
+
+#heading #cover {
+  height: 300px;
+  width: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+#heading img{
+  margin: 0;
+  padding: 0;
+  height: 300px;
+}
+
+
+/*erase the border when clicking when defined as 'button'*/
+/*outline: none;*/
+
+input[type=checkbox] {
+   position: absolute;
+   opacity: 0;
+}
+
+label i{
+    font-size: 18px;
+}
+
+label {
+  font-size: 1.8em;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 2em;
+  border-radius: 30%;
+  border-bottom-style: dashed;
+}
+
+label:hover {
+  background: pink;
+  font-size: 2.2em;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}
+
+#skills ul a{
+  display: inline-block;
+  margin: 0.5em 1em;
+  padding: .5em;
+  border-radius: 50%;
+  background: #95a5a6;
+}
+
+/* Default State */
+.dpd-content {
+  display: none;
+  font-size: 1.5em;
+}
+
+/* Toggled State */
+input[type=checkbox]:checked ~ .dpd-content {
+  display: inline;
+}

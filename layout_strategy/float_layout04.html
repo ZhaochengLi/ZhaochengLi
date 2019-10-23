@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Design: Two Column, Fixed-width Full-length Header and Footer</title>
+  </head>
+  <body>
+    <div id="header">HEADER</div>
+    <div id="wrapper">
+      <div id="main">MAIN</div>
+      <div id="extras">SIDEBAR</div>
+    </div>
+    <div id="footer">FOOTER</div>
+  </body>
+</html>
+
+<style>
+  body{
+    background-color: #f5f0e4;
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  #header {
+    background-color: grey;
+    height: 20px;
+  }
+
+  #wrapper{
+    border-color: grey;
+    border-style: dotted;
+    margin: 0 auto;
+    width: 960px;
+    height: 500px;
+  }
+
+  #main {
+    background-color: pink;
+    float: left;
+    width: 650px;
+    height: 500px;
+    margin: 0 20px;
+  }
+
+  #extras {
+    background-color: lightblue;
+    float: left;
+    width: 250px;
+    height: 500px;
+    margin: 0 20px 0 0;
+  }
+
+  #footer {
+    background-color: grey;
+    height: 20px;
+    clear: left;
+  }
+</style>

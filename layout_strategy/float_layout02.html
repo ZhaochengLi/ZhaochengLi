@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Design: Two Column, Fixed-width Layouts</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="header">HEADER</div>
+      <div id="main">MAIN</div>
+      <div id="extras">SIDEBAR</div>
+      <div id="footer">FOOTER</div>
+    </div>
+  </body>
+</html>
+
+<style>
+  body{
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  #wrapper{
+    border-color: grey;
+    border-style: dotted;
+    width: 960px;
+  }
+
+  #header {
+    background-color: grey;
+    height: 20px;
+  }
+
+  #main {
+    background-color: pink;
+    float: left;
+    width: 650px;
+    height: 500px;
+    margin: 0 20px;
+  }
+
+  #extras {
+    background-color: lightblue;
+    float: left;
+    width: 250px;
+    height: 500px;
+    margin: 0 20px 0 0;
+  }
+
+  #footer {
+    background-color: grey;
+    height: 20px;
+    clear: left;
+  }
+</style>

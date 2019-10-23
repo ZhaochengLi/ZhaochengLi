@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Design: Three Column. Positioned, Fluid Layouts</title>
+  </head>
+  <body>
+    <div id="header">HEADER</div>
+    <div id="content">
+      <div id="main">MAIN: footer omitted, potential overlap in positioned layout</div>
+      <div id="news">NEWS</div>
+      <div id="links">LINKS</div>
+    </div>
+  </body>
+</html>
+
+<style>
+  body{
+    background-color: #f5f0e4;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  #header {
+    background-color: grey;
+  }
+
+  #content {
+    position: relative;
+    margin: 0;
+  }
+
+  /* it save the touble to make NEGATIVE MARGINS*/
+  #main {
+    background-color: pink;
+    width: 50%;
+    height:500px;
+    position: absolute;
+    top: 0;
+    left: 25%;
+    margin: 0;
+  }
+
+  #news {
+    background-color: lightblue;
+    width: 20%;
+    height:400px;
+    position: absolute;
+    top: 0;
+    left: 2.5%;
+    margin: 0;
+  }
+
+ #links {
+   background-color: lightblue;
+   width: 20%;
+   height:400px;
+   position: absolute;
+   top: 0;
+   right: 2.5%;
+   margin: 0;
+ }
+
+</style>

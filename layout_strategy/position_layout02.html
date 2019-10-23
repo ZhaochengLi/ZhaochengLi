@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Design: Three Column. Positioned, Fixed Layouts</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="header">HEADER</div>
+      <div id="content">
+        <div id="main">MAIN: footer omitted, potential overlap in positioned layout</div>
+        <div id="news">NEWS</div>
+        <div id="links">LINKS</div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<style>
+  body{
+    background-color: #f5f0e4;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  #wrapper {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  #header{
+    background-color: grey;
+  }
+
+  #content {
+    margin: 0;
+    position: relative;
+  }
+
+  #main {
+    background-color: pink;
+    width: 520px;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 220px;
+    margin: 0;
+  }
+
+  #news {
+    background-color: lightblue;
+    width: 200px;
+    height:400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+  }
+
+  #links {
+    background-color: lightblue;
+    width: 200px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+  }
+
+</style>

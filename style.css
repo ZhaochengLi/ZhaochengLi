@@ -2,13 +2,13 @@ body{
   margin: 0;
   padding: 0;
   width: 100%;
-  background-image: #ecf0f1;
-  background-size: auto; /*!!!*/
+  background: #ecf0f1;
+  /*background-size: auto;*/
 }
 
 #quote {
-  position: absolute;
-  margin: 0;
+  margin: 0 auto;
+  width: 1280px;
   padding: 0;
   top: 10px;
 }

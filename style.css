@@ -31,7 +31,8 @@ p {
 }
 
 .wrap {
-  height: 500px;
+  margin: 0 auto;
+  width: 1000px;
 }
 
 .nav {
@@ -155,6 +156,7 @@ p {
 .contact:hover button{
   color: #ff7979;
   animation: none;
+  cursor: pointer;
 }
 
 .app li:hover i{

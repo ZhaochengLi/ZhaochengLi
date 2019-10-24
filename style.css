@@ -7,7 +7,7 @@ body{
   padding: 0;
   width: 100%;
   background-image: url("./pic/bgd6.jpg");
-  background-size: auto;
+  background-size: contain;
 }
 
 .word:first-letter {

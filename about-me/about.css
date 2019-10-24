@@ -1,17 +1,25 @@
 * {
   font-family: monospace;
-  background: #ecf0f1;
+}
+
+/* set variable with $*/
+/*$cancel: #C33764;*/
+
+body{
+  background-image: url("../pic/bgd6.jpg");
 }
 
 .wrap {
   width: 960px;
+  min-height: 700px;
   margin: 0 auto;
+  background: #ecf0f1;
 }
 
 #heading {
   text-align: center;
   border-bottom-style: groove;
-  border-bottom-color: grey;
+  border-bottom-color: pink;
   margin: 0;
   padding: 0;
 }
@@ -36,6 +44,9 @@
   height: 300px;
 }
 
+.fold {
+  margin: 1.4em;
+}
 
 /*erase the border when clicking when defined as 'button'*/
 /*outline: none;*/
@@ -46,21 +57,20 @@ input[type=checkbox] {
 }
 
 label i{
-    font-size: 18px;
+    font-size: 18px;;
 }
 
 label {
-  font-size: 1.8em;
+  font-size: 1.5em;
   font-weight: bold;
   cursor: pointer;
   line-height: 2em;
-  border-radius: 30%;
-  border-bottom-style: dashed;
 }
 
 label:hover {
   background: pink;
-  font-size: 2.2em;
+  font-size: 1.9em;
+  color: #ecf0f1;
   transition-duration: 0.3s;
   transition-timing-function: linear;
 }

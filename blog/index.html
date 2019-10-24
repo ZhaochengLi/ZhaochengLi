@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Blog</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div class="head">
+      <h1>Leo's Blog</h1>
+      <ul>
+        <a href="../index.html">Home</a>
+        <a href="../about-me/about.html">About</a>
+        <a href="#">Project</a>
+      </ul>
+    </div>
+
+    <div class="wrap">
+      <div class="sidebar">
+        <h2 class="title">Blog Sidebar</h2>
+        <div class="menu">
+          <li><label for="blog-01" class="tab">Ludwig Wittgenstein(维特根斯坦)</label></li>
+          <li><label for="blog-02" class="tab">No Man Is An Island - John Donne</label></li>
+        </div>
+      </div>
+
+      <div class="main">
+        <h2 class="title">Blog Content</h2>
+        <div class="content">
+          <input class="article" type="checkbox" id="blog-01">
+          <iframe id="ludwig" src="./content/ludwig.html" width="680px" height="700px">Ludwig Wittgenstein</iframe>
+          <input class="article" type="checkbox" id="blog-02">
+          <iframe id="donne" src="./content/no-man-is-an-island.html" width="680px" height="700px">No Man Is An Island</iframe>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

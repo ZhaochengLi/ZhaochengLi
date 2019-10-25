@@ -10,36 +10,31 @@ body{
   background-size: contain;
 }
 
-.word:first-letter {
-  font-size: 300%;
-  color: #ff7979;
+.quote {
+  margin: 0;
+  padding: 1%;
+  color: black;
+  background: rgb(228, 239, 245, .8);
 }
 
-p {
+.quote p {
+  margin: 0;
   font-style: italic;
-  font-weight: 400;
-  color: #000000;
   font-size: 20px;
 }
 
-.quote {
-  margin: 0 auto;
-  width: 980px;
-  padding: 0;
-  top: 10px;
-  background: #c8d6e5;/*#ecf0f1;*/
-}
-
-.wrap {
-  margin: 0 auto;
-  width: 1000px;
+.word:first-letter {
+  color: #ff7979;
+  font-size: 150%;
 }
 
 .nav {
   display: flex;
+  margin-top: 5%;
   height: 300px;
   align-items: center;
   justify-content: center;
+  background: rgb(228, 239, 245, .8);
 }
 
 .nav ul{
@@ -92,7 +87,19 @@ p {
 
 .contact {
   position:absolute;
+  margin-top: 5%;
   left: 0;
+}
+
+/* default setting for button */
+.contact button {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0;
+  padding: 8px 20px;
+  background: rgb(228, 239, 245, .8);
+  outline: none;
+  border-style: none;
 }
 
 .contact button {
@@ -103,15 +110,6 @@ p {
   50% {
     opacity: 0;
   }
-}
-
-.contact button {
-  font-size: 1.5em;
-  font-weight: bold;
-  margin: 0;
-  padding: 8px 20px;
-  outline: none;
-  background-color: #c8d6e5;/*#f6e58d;*/
 }
 
 /* slow dropdown settings */
@@ -133,7 +131,7 @@ p {
 .app li {
   list-style: none;
   padding: 0;
-  margin-top: 20px;
+  margin-top: 10px;
   width: 3.8em;
 }
 
@@ -146,7 +144,7 @@ p {
   justify-content: center;
   align-items: center;
   font-size: 2.5em;
-  color: #c8d6e5;
+  color: rgb(0, 0, 0, .8);
 }
 
 .contact:hover .app{

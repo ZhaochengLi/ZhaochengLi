@@ -93,22 +93,39 @@ body {
   transition-duration: 0.2s;
   transition-timing-function: ease-out;
 }
-
-li {
+/*
+.menu li {
+  border-style: dashed;
   position: relative;
   list-style-type: none;
   cursor: pointer;
   margin-top: 10px;
-  padding-left: 5px;
-  width: 290px;
   box-shadow: 1px 1px 5px .5px black;
   background: pink;
 }
 
-li:active {
+.menu li:active {
   margin-top: 12px;
   box-shadow: none;
 }
+*/
+
+.tab {
+  display: list-item;
+  border-bottom-style: groove;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to right, grey 45%, pink);
+  background-position: left;
+  background-size: 200% 100%;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+}
+
+.tab:hover {
+  background-position: right;
+}
+
 
 iframe {
   border-style: none;

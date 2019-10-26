@@ -7,24 +7,25 @@ body{
   padding: 0;
   width: 100%;
   background-image: url("./pic/bgd6.jpg");
-  background-size: contain;
+  background-size: cover;
 }
 
 .quote {
   margin: 0;
   padding: 1%;
   color: black;
-  background: rgb(228, 239, 245, .8);
+  background: rgb(181, 49, 9, .7);
 }
 
 .quote p {
   margin: 0;
   font-style: italic;
   font-size: 20px;
+  color: rgb(240, 231, 228);
 }
 
 .word:first-letter {
-  color: #ff7979;
+  color: rgb(237, 179, 31);
   font-size: 150%;
 }
 
@@ -34,7 +35,7 @@ body{
   height: 300px;
   align-items: center;
   justify-content: center;
-  background: rgb(228, 239, 245, .8);
+  background: rgb(181, 49, 9, .7);
 }
 
 .nav ul{
@@ -97,7 +98,7 @@ body{
   font-weight: bold;
   margin: 0;
   padding: 8px 20px;
-  background: rgb(228, 239, 245, .8);
+  background: rgb(181, 49, 9, .7);
   outline: none;
   border-style: none;
 }
@@ -144,7 +145,7 @@ body{
   justify-content: center;
   align-items: center;
   font-size: 2.5em;
-  color: rgb(0, 0, 0, .8);
+  color: rgb(0, 0, 0);
 }
 
 .contact:hover .app{
@@ -152,11 +153,11 @@ body{
 }
 
 .contact:hover button{
-  color: #ff7979;
+  color: rgb(237, 179, 31);
   animation: none;
   cursor: pointer;
 }
 
 .app li:hover i{
-  color: #ff7979;
+  color: rgb(237, 179, 31)/*#ff7979*/;
 }

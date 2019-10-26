@@ -3,95 +3,98 @@
 }
 
 body{
-  margin: 0;
-  padding: 0;
-  width: 100%;
   background-image: url("./pic/bgd6.jpg");
   background-size: cover;
 }
 
-.quote {
-  margin: 0;
-  padding: 1%;
-  color: black;
-  background: rgb(181, 49, 9, .7);
-}
-
-.quote p {
-  margin: 0;
-  font-style: italic;
-  font-size: 20px;
-  color: rgb(240, 231, 228);
-}
-
-.word:first-letter {
-  color: rgb(237, 179, 31);
-  font-size: 150%;
-}
-
-.nav {
+/*===================== LOGO ==========================*/
+.logo {
+  /* center object at the center of the window with position as 'absolute' */
+  position: absolute;
+  width: 100%;
+  height: 100%;
   display: flex;
-  margin-top: 5%;
-  height: 300px;
+  align-items: center;
+  z-index: 100;
+}
+
+.bar {
+  margin-left: 20%;
+  font-size: 100px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  background: rgb(181, 49, 9, .7);
-}
-
-.nav ul{
   padding: 0;
-  margin: 0;
+  width: 150px;
+  height: 150px;
+  background-color: rgb(237, 179, 31);
+  border-radius: 50%;
+  border: solid thick;
+  animation: spin 5s linear infinite;
 }
 
+.bar:hover, .bar:focus {
+  background: black;
+  color: rgb(237, 179, 31);
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+  animation: none;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*====================== navigators ==================*/
+.nav {
+  margin-left: 40px;
+  display: none;
+}
 .nav li {
   list-style: none;
-  margin-bottom: 40px;
-
-  /* em how to measure?*/
-
   border-radius: 10%;
-  box-shadow: 5px 5px 8px 1px grey;
 }
-
 .nav li a {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2em;
-  padding: 0;
-  width: 200px;
-  height: 50px;
   text-decoration: none;
+  width: 150px;
+  height: 50px;
   color: black;
+  font-size: 2em;
 }
 
 #blog {
   background-color: #ff7979;/*#ff6b81;*/
 }
-
 #project {
+  margin: 50px 0;
   background-color: #ffbe76;
 }
-
 #about {
   background-color: #7ed6df;
 }
 
-#blog:active, #project:active, #about:active {
-  box-shadow: none;
+/*=========================Menu Box==========================*/
+/* checkbox */
+input[class=menu] {
+  position: absolute;
+  opacity: 0;
+}
+/* toggled state */
+input[id=show]:checked ~ .nav{
+  display: list-item;
 }
 
-#blog:hover, #project:hover, #about:hover {
-  font-weight: bold;
-  opacity: 0.9;
-}
-
+/*=================== SOCIAL MEDIA ======================*/
 .contact {
   position:absolute;
   margin-top: 5%;
   left: 0;
 }
-
 /* default setting for button */
 .contact button {
   font-size: 1.5em;
@@ -102,17 +105,14 @@ body{
   outline: none;
   border-style: none;
 }
-
 .contact button {
   animation: blink 2s linear infinite;
 }
-
 @keyframes blink {
   50% {
     opacity: 0;
   }
 }
-
 /* slow dropdown settings */
 /* default settings */
 .app {
@@ -123,23 +123,19 @@ body{
   transition-duration: 1.5s;
   transition-timing-function: ease-out;
 }
-
 .app ul{
   margin: 0;
   padding: 0;
 }
-
 .app li {
   list-style: none;
   padding: 0;
   margin-top: 10px;
   width: 3.8em;
 }
-
 .app li a {
   text-decoration: none;
 }
-
 .app li i{
   display: flex;
   justify-content: center;
@@ -151,7 +147,6 @@ body{
 .contact:hover .app{
   height: 400px;
 }
-
 .contact:hover button{
   color: rgb(237, 179, 31);
   animation: none;

@@ -113,7 +113,7 @@ to the 'slowly sliding down' effect.
   top: 90px;
   left: 0;
   width: 30%;
-  height: 250px;
+  height: 100%;
   padding-top: 10px;
   margin: 0;
   overflow: scroll;

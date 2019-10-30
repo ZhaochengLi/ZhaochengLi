@@ -65,9 +65,7 @@ body{
   transition-timing-function: ease-out;
 }
 
-/* ====== logo ======*/
 /* ====================== title logo =======================*/
-
 .title {
   position: fixed;
   display: flex;
@@ -79,7 +77,7 @@ body{
   z-index: 100;
 }
 
-.title label {
+.title a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -87,15 +85,19 @@ body{
   padding: 0;
   width: 50px;
   height: 50px;
+  color: black;
   background-color: rgb(237, 179, 31);
   border-radius: 50%;
-  animation: blink 4s linear infinite;
   border-style: solid;
+  border-color: black;
+  animation: blink 4s linear infinite;
+  text-decoration: none;
 }
 
-.title:hover label{
+.title:hover a{
   background: black;
   color: rgb(237, 179, 31);
+  border-color: rgb(237, 179, 31);
   transition-duration: 1s;
   transition-timing-function: ease-out;
   animation: none;
@@ -106,6 +108,7 @@ body{
     border-color: pink;
   }
 }
+/* ===================================================== */
 
 /* ========================= body =======================*/
 
@@ -168,9 +171,9 @@ label {
 }
 
 label:hover {
-  background: pink;
+  background: rgb(181, 49, 9);
   font-size: 1.9em;
-  color: #ecf0f1;
+  color: rgb(237, 179, 31);
   transition-duration: 0.3s;
   transition-timing-function: linear;
 }

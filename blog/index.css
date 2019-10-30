@@ -103,6 +103,8 @@ body {
     border-color: pink;
   }
 }
+/* =============================================== */
+
 
 /* menu default settins
 NOTICE: if using 'display' function to show the dropdown menu, you are unable
@@ -112,7 +114,7 @@ to the 'slowly sliding down' effect.
   position: absolute;
   top: 90px;
   left: 0;
-  width: 30%;
+  width: 20%;
   height: 100%;
   padding-top: 10px;
   margin: 0;
@@ -123,7 +125,7 @@ to the 'slowly sliding down' effect.
 .content {
   position: absolute;
   top: 90px;
-  width: 70%;
+  width: 80%;
   right: 0;
   padding: 0;
   margin: 0;

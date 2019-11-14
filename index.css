@@ -1,0 +1,155 @@
+* {
+  font-family: monospace;
+}
+
+.nevi {
+/* ===== fix combo === */
+  position: fixed;
+  top: 0;
+  left: 0;
+/* =================== */
+  width: 100%;
+  height: 60px;
+  background-color: #0a3d62;
+}
+
+.header{
+  position: absolute;
+  bottom: 0;
+  color: #f1f2f6;
+  font-size: 2.5em;
+}
+
+.menu {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.nevi a {
+  text-decoration: none;
+  color: #f1f2f6;
+  font-size: 2em;
+  margin-right: 18px;
+}
+
+.nevi a:hover {
+  color: #636e72;
+}
+
+.main {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.mugshot, .focus, .achieve {
+  width: 430px;
+  height: 350px;
+  overflow: hidden;
+  padding: 5px;
+  background-color: #dfe4ea;
+  /*Q: tell the difference between putting in here or in hover*/
+  transition: 0.5s;
+  /* ======================================================== */
+}
+
+.mugshot {
+  display: flex;
+  justify-content: center;
+}
+
+.photo {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.photo img{
+  transform: scale(0.19);
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.col2 {
+  margin-top: 30px;
+}
+
+.mugshot li, .focus li, .achieve li {
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.main:hover .achieve, .main:hover .mugshot, .main:hover .focus {
+  transform: scale(0.8);
+  filter: blur(5px);
+}
+
+.main .mugshot:hover, .main .focus:hover, .main .achieve:hover {
+  transform: scale(1);
+  filter: blur(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 200px;
+  background-color: #dfe4ea;
+}
+
+.social, .contact {
+  margin: 20px;
+}
+
+.social a, .contact a {
+  text-decoration: none;
+  color: black;
+  display: list-item;
+  list-style: none;
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+#sub-head{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.app {
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+.social a:hover, .contact a:hover {
+  color: #636e72;
+}
+
+.social a:hover .app, .contact a:hover .app{
+  text-decoration: underline;
+}

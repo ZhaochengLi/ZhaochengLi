@@ -11,6 +11,7 @@
   width: 100%;
   height: 60px;
   background-color: #0a3d62;
+  z-index: 1;
 }
 
 .header{
@@ -100,18 +101,6 @@
   filter: blur(0);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .footer {
   position: absolute;
   bottom: 0;
@@ -152,4 +141,17 @@
 
 .social a:hover .app, .contact a:hover .app{
   text-decoration: underline;
+}
+
+.contact #weixin:before {
+  position: absolute;
+  content: url("./pic/wechat.jpg");
+  bottom:0;
+  opacity: .9;
+  transition: .5s;
+  transform: scale(0);
+}
+
+.contact #weixin:hover:before {
+  transform: scale(1);
 }
